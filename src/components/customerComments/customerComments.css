@@ -1,0 +1,106 @@
+.customer-comments-container {
+    margin: 4rem;
+}
+
+.customer-comments-container-header {
+    display: flex;
+    justify-content: start;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+    margin: 2rem;
+}
+
+.customer-comment {
+    padding: 2rem;
+    border: 1px solid #0000001A;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.stars-rating {
+    color: #FFC633;
+    font-size: 25px;
+    margin: 2px;
+}
+
+.customer-comment-name {
+    margin: 5px;
+}
+
+.customer-comment-para {
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .customer-comments-container {
+        margin: 2rem;
+    }
+
+    .customer-comments-container-header {
+        font-size: 1.5rem;
+    }
+
+    .comments-container {
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+
+
+    .customer-comment {
+        width: 400px;
+        padding: 0;
+    }
+
+    .stars-rating {
+        font-size: 22px;
+    }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+    .customer-comments-container {
+        margin: 1rem;
+    }
+
+    .customer-comments-container-header {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    .comments-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .customer-comment {
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .stars-rating {
+        font-size: 20px;
+    }
+
+    .customer-comment-name {
+        font-size: 1rem;
+    }
+
+    .customer-comment-para {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,52 @@
+.brand-logos-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 40px;
+    background-color: black;
+    color: white;
+}
+
+.brand-logo {
+    font-size: 40px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 984px){
+    .brand-logo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+@media (max-width: 834px){
+    .brand-logo {
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-logos-container {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brand-logo {
+        font-size: 32px;
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-logos-container {
+        padding: 0.5rem;
+    }
+
+    .brand-logo {
+        font-size: 24px;
+        margin: 0.5rem;
+    }
+}

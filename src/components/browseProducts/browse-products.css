@@ -1,0 +1,161 @@
+.browse-dress-main-container {
+    background-color: #F0F0F0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 0 9.5rem;
+    border-radius: 40px;
+}
+
+.main-browse-dress-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.browse-dress-container {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 2rem;
+}
+
+.browse-dress-images {
+    display: flex;
+    gap: 20px;
+}
+
+.casual-dress-image {
+    cursor: pointer;
+    position: relative;
+    right: 2.5rem;
+}
+
+.formal-dress-image {
+    cursor: pointer;
+    position: absolute;
+    left: 40rem;
+}
+
+.formal-dress-image img {
+    border-radius: 20px;
+}
+
+.formal-dress-image p {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    bottom: 17rem;
+    right: 14rem;
+}
+
+.party-dress-image {
+    position: relative;
+}
+
+.party-dress-image p {
+    font-size: 36px;
+    left: 3rem;
+    position: absolute;
+    bottom: 15rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.party-dress-image img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.gym-dress-image p {
+    position: relative;
+    bottom: 16rem;
+    right: 6.5rem;
+    font-size: 36px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gym-dress-image img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .browse-dress-main-container {
+        width: 90%;
+        margin: 0 0 0 2.5rem;
+    }
+
+    .browse-dress-container {
+        font-size: 22px;
+    }
+
+    .main-browse-dress-images {
+        gap: 0px;
+        overflow: hidden;
+    }
+
+    .browse-dress-images {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .formal-dress-image {
+        position: inherit;
+        width: 500px;
+    }
+
+    .browse-dress-images p {
+        right: 100px;
+    }
+
+    .party-text {
+        margin-right: 300px;
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .browse-dress-main-container {
+        width: 90%;
+        margin: 0 0 0 1.6rem;
+    }
+
+    .browse-dress-container {
+        font-size: 32px;
+    }
+
+    .browse-dress-images {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .browse-dress-images img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .browse-dress-images p {
+        font-size: 18px;
+    }
+
+    .casual-dress-image {
+        right: 0;
+    }
+
+    .formal-dress-image p {
+        bottom: 95px;
+        right: 80px;
+    }
+
+    .party-dress-image p {
+        bottom: 65px;
+        left: 140px;
+    }
+    .gym-dress-image p {
+        bottom: 190px;
+        right: 70px;
+    }
+
+}
