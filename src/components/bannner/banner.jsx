@@ -31,7 +31,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="home-image-container">
-                    <img src="https://s3-alpha-sig.figma.com/img/b26f/ea69/ccfd8aa5825862cdb9604a4fb4930464?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bGbkApZPSr3T2OCQhzOYYTTdKBSYTPxYXyRSfliDcPC0fI2IozHggb5P2iDHhFs-jHGl7PoOs85kvk7wIeWv4GUSQvUI4e30C0WKgASAlJBOFKJ-O4Uno~PopqAO-Z6AqYDk7nQYhutjH81XzZ-zwQ9tPJjLqjljHsQOfXQm4OAgP1q1s6LlR7lPdbQeNulDk~z5trfdhlVz9P3YcH-4~d0HMm3cijgQTR9BXVzl8XRn1XkyMof~qyPco1r6n9F3Xd6k~fPLUXGaUkSLi3lh6n14tsdS8W9YtruU1aCaPpsoUszKJuQBlphiE0pHK6UAMFk6gD9xIMwiPFD02Ivh~A__" alt="" />
+                    <img src="https://s3-alpha-sig.figma.com/img/b26f/ea69/ccfd8aa5825862cdb9604a4fb4930464?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jdcIfbiIoxN41P3cmOVr8Waxpkv0FkaxXB~TLqPdcGV4PxjyO-5SNyISAtbZAIaQOCeGHt2ArUuOTHUGC7aOKp~apJC6ucoVSzjgHPtSZ6PQj8wwkQdOa1g4vgVpjX3vgSC7xBHipp19C5N4rfFwUKtv3dpwZdB2KwUvzko~GJUrjnv~MHR1yV~9CH0IuFph4h4uyVWZCk9TbjFR9idUZ6dEjACl1fG4ivUdyLacoRpGkQJGxA8SqGjvrAYhbAYMbEcUZykUXLoSQkNo9qu8dBpN48Y0QO0lJPAQq7HFjmRlD3jfVUmj2nnLrAGZ15zsQrQyDiDzyRuZBXR64Io3pg__" alt="" />
                 </div>
             </section>
         </div>
