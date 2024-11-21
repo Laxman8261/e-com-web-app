@@ -1,6 +1,6 @@
 .footer-container-submain {
     background-color: #F0F0F0;
-    position: absolute;
+    position: relative;
     width: 100%;
     margin-top: 6rem;
 }
@@ -17,7 +17,8 @@
 .subscribe-container-content {
     display: flex;
     justify-content: center;
-    gap: 300px;
+    flex-wrap: wrap; 
+    gap: 20px; 
     background-color: black;
     padding: 2rem;
     border-radius: 20px;
@@ -28,18 +29,21 @@
     color: white;
     font-size: 40px;
     font-weight: 700;
-    text-align: left;
-    width: 515px;
+    text-align: center; 
+    width: 100%; 
+    max-width: 500px; 
 }
 
 .subscribe-container-button {
     display: flex;
     gap: 12px;
     flex-direction: column;
+    align-items: center; 
 }
 
 .subscribe-container-email {
-    width: 349px;
+    width: 100%;
+    max-width: 349px; 
     height: 48px;
     border-radius: 62px;
     padding: 5px 5px 5px 25px;
@@ -49,16 +53,18 @@
 .subscribe-container-button-tag {
     background-color: white;
     height: 48px;
-    width: 349px;
+    width: 100%; 
+    max-width: 349px;
     border-radius: 62px;
     padding: 5px;
     font-size: 16px;
-    font-weight: 22px;
+    font-weight: bold; 
 }
 
 .footer-ShopCo-Contaiiner {
-    width: 248px;
-    height: 177px;
+    width: 100%; 
+    max-width: 248px; 
+    height: auto; 
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -67,12 +73,13 @@
 
 .footer-ShopCo-details-main-Contaiiner {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px;
 }
 
 .footer-ShopCo-details-Contaiiner {
-    width: 248px;
-    height: 177px;
+    width: 228px;
     display: flex;
     flex-direction: column;
     gap: 26px;
@@ -86,12 +93,14 @@
 .footer-info-container {
     margin-top: 4rem;
     display: flex;
-    gap: 35px;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between;
 }
 
 .footer-ShopCo-Contaiiner-company-name {
     font-size: 38px;
-    font-weight: 500px;
+    font-weight: 700;
 }
 
 .footer-ShopCo-details-Contaiiner-header {
@@ -113,17 +122,24 @@
     width: 90%;
     margin-top: 6rem;
     display: flex;
-    justify-content: start;
-    align-items: start;
-    text-align: left;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
 }
 
 .footer-copyright-details-container {
+    border-top: 1px solid #0000001a;
     display: flex;
-    border-top: 1px solid #0000001A;
-    width: 100%;
-    padding: 20px;
+    flex-wrap: wrap; 
     gap: 650px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-copyright-details-container p{
+    margin-bottom: 20px;
 }
 
 .payment-app-logos {
@@ -134,17 +150,36 @@
     cursor: pointer;
 }
 
-.company-help-container {
-    display: flex;
-}
-
+.company-help-container,
 .FAQ-resources-container {
     display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
-@media (max-width:768px) {
-    .footer-info-container {
+@media (max-width: 1300px){
+    .footer-copyright-details-container {
         flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+@media (max-width: 900px){
+    .footer-info-container {
+        margin-left: 2rem;
+        gap: 50px;
+    }
+
+    .footer-ShopCo-details-main-Contaiiner{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-info-container {
+        flex-direction: column; 
+        margin-left: 0;
+        gap: 20px
     }
 
     .subscribe-container-content {
@@ -154,18 +189,17 @@
     }
 
     .footer-ShopCo-Contaiiner {
-        width: 500px;
+        max-width: 500px; 
     }
 
     .company-help-container {
         flex-direction: column;
-        gap: 5rem;
+        gap: 2rem; 
     }
 
     .FAQ-resources-container {
         flex-direction: column;
-        gap: 5rem;
-
+        gap: 2rem; 
     }
 
     .footer-copyright-details-container {
@@ -175,37 +209,37 @@
     }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
+    .footer-ShopCo-details-Contaiiner{
+        width: 80px;
+    }
+
     .subscribe-container-content {
         gap: 10px;
     }
 
     .subscribe-container-content h1 {
         font-size: 30px;
-        width: 300px;
+        max-width: 300px;
     }
 
     .footer-ShopCo-Contaiiner {
-        width: 400px;
-        margin-left: 3rem;
+        max-width: 90%;
+        margin-left: 10px;
+        overflow: hidden;
     }
 
     .company-help-container {
-        margin-left: 3rem;
+        margin-left: 1.5rem;
     }
 
-    .footer-copyright-details-container {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+    .footer-info-container {
+        width: 100%; /* Flexible width */
     }
 
-    .footer-info-container{
-        width: 480px;
-    }
-
-    .footer-ShopCo-details-main-Contaiiner{
+    .footer-ShopCo-details-main-Contaiiner {
         overflow: hidden;
-        width: 460px;
+        justify-content: space-around;
+        width: 100%; /* Adjusted to prevent overflow */
     }
 }

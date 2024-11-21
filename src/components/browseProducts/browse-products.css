@@ -1,161 +1,113 @@
 .browse-dress-main-container {
     background-color: #F0F0F0;
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem 0 0 9.5rem;
+    margin: 2rem auto;
+    padding-top: 1.5rem;
     border-radius: 40px;
+    text-align: center;
+}
+
+.browse-dress-container h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 .main-browse-dress-images {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
 }
 
-.browse-dress-container {
-    font-size: 25px;
-    font-weight: 700;
-    margin: 2rem;
-}
-
-.browse-dress-images {
+.image-row,
+.image-row-2 {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 
-.casual-dress-image {
-    cursor: pointer;
+.image-row-2 {
     position: relative;
-    right: 2.5rem;
+    bottom: 20px;
 }
 
-.formal-dress-image {
-    cursor: pointer;
-    position: absolute;
-    left: 40rem;
+.image-wrapper {
+    position: relative;
 }
 
-.formal-dress-image img {
+.image-wrapper img {
     border-radius: 20px;
 }
 
-.formal-dress-image p {
-    font-size: 36px;
+.image-text-gym {
+    font-size: 32px;
     font-weight: 700;
+    transform: translate(-50%, -50%);
     position: relative;
-    bottom: 17rem;
-    right: 14rem;
+    bottom: 250px;
+    left: 90px;
 }
 
-.party-dress-image {
-    position: relative;
-}
-
-.party-dress-image p {
-    font-size: 36px;
-    left: 3rem;
-    position: absolute;
-    bottom: 15rem;
+.image-text {
+    font-size: 32px;
     font-weight: 700;
-    cursor: pointer;
-}
-
-.party-dress-image img {
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.gym-dress-image p {
+    transform: translate(-50%, -50%);
     position: relative;
-    bottom: 16rem;
-    right: 6.5rem;
-    font-size: 36px;
-    font-weight: 700;
-    cursor: pointer;
+    bottom: 250px;
+    left: 90px;
 }
 
-.gym-dress-image img {
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .browse-dress-main-container {
+@media (max-width:1350px) {
+    .browse-dress-main-container{
         width: 90%;
-        margin: 0 0 0 2.5rem;
-    }
-
-    .browse-dress-container {
-        font-size: 22px;
-    }
-
-    .main-browse-dress-images {
-        gap: 0px;
-        overflow: hidden;
-    }
-
-    .browse-dress-images {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .formal-dress-image {
-        position: inherit;
-        width: 500px;
-    }
-
-    .browse-dress-images p {
-        right: 100px;
-    }
-
-    .party-text {
-        margin-right: 300px;
     }
 }
 
-/* Mobile View (480px and below) */
-@media (max-width: 480px) {
-    .browse-dress-main-container {
-        width: 90%;
-        margin: 0 0 0 1.6rem;
-    }
+@media (max-width:768px) {
 
-    .browse-dress-container {
-        font-size: 32px;
-    }
-
-    .browse-dress-images {
+    .image-row,
+    .image-row-2 {
         flex-direction: column;
-        gap: 1rem;
     }
 
-    .browse-dress-images img {
+    .image-wrapper img {
         width: 80%;
-        max-width: 250px;
     }
 
-    .browse-dress-images p {
-        font-size: 18px;
+    .image-wrapper p {
+        font-size: 38px;
     }
 
-    .casual-dress-image {
-        right: 0;
+    .image-text {
+        bottom: 175px;
+        left: 160px;
     }
 
-    .formal-dress-image p {
-        bottom: 95px;
-        right: 80px;
+    .image-text-gym {
+        bottom: 320px;
+        left: 160px;
     }
 
-    .party-dress-image p {
-        bottom: 65px;
-        left: 140px;
+    .image-gym {
+        position: relative;
+        bottom: 20px;
     }
-    .gym-dress-image p {
-        bottom: 190px;
-        right: 70px;
+}
+
+@media (max-width:480px) {
+    .image-wrapper p {
+        font-size: 20px;
     }
 
+    .image-text {
+        bottom: 90px;
+        left: 80px;
+    }
+
+    .image-text-gym {
+        bottom: 160px;
+        left: 80px;
+    }
 }
