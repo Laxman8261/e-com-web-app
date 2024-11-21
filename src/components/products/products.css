@@ -61,6 +61,13 @@
     padding-top: 2.5rem;
 }
 
+@media (max-width:1300px) {
+    .products-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
 @media (max-width:768px) {
     .products-container {
         width: 100%;

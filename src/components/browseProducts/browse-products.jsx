@@ -1,38 +1,41 @@
-import React from 'react'
-import Casual from '../assets/Casual.png'
-import formal from '../assets/formal.png'
-import party from '../assets/party.png'
-import gym from '../assets/gym.png'
-import '../browseProducts/browse-products.css'
+import React from 'react';
+import Casual from '../assets/Casual.png';
+import Formal from '../assets/formal.png';
+import Party from '../assets/party.png';
+import Gym from '../assets/gym.png';
+import '../browseProducts/browse-products.css';
+
 const BrowseProducts = () => {
     return (
         <section className="browse-dress-main-container">
             <div className="browse-dress-container">
                 <h1>BROWSE BY DRESS STYLE</h1>
             </div>
-            <div className='main-browse-dress-images'>
-                <div className='browse-dress-images'>
-                    <div className='casual-dress-image'>
-                        <img src={Casual} alt="casual" />
+            <div className="main-browse-dress-images">
+                <div className="image-row">
+                    <div className="image-wrapper">
+                        <img src={Casual} alt="Casual" />
                     </div>
-                    <div className='formal-dress-image'>
-                        <img src={formal} alt="formal" />
-                        <p>Formal</p>
+                    <div className="image-wrapper">
+                        <img src={Formal} alt="Formal" />
+                        <p className="image-text">Formal</p>
                     </div>
                 </div>
-                <div className='browse-dress-images'>
-                    <div className='party-dress-image'>
-                        <img src={party} alt="party" />
-                        <p className='party-text'>Party</p>
+                <div className="image-row-2">
+                    <div className="image-wrapper">
+                        <img src={Party} alt="Party" />
+                        <p className="image-text">Party</p>
                     </div>
-                    <div className='gym-dress-image'>
-                        <img src={gym} alt="gym" />
-                        <p>Gym</p>
+                    <div className="image-wrapper">
+                        <img className='image-gym' src={Gym} alt="Gym" />
+                        <p className="image-text-gym">Gym</p>
                     </div>
                 </div>
             </div>
+
         </section>
-    )
-}
+    );
+};
 
 export default BrowseProducts;
+
