@@ -1,113 +1,146 @@
-.browse-dress-main-container {
-    background-color: #F0F0F0;
-    width: 80%;
-    margin: 2rem auto;
-    padding-top: 1.5rem;
-    border-radius: 40px;
-    text-align: center;
-}
-
-.browse-dress-container h1 {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
-.main-browse-dress-images {
+.maincontainer_brows {
+    background: #F0F0F0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.image-row,
-.image-row-2 {
-    display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    padding-bottom: 3rem;
+    margin: 1rem;
+    border-radius: 42px;
+ 
+
+}
+.maincontainer_brows img{
+    cursor: pointer;
+}
+.brows_header {
+    font-weight:900;
+    font-size: 19px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+ 
+
+}
+
+.browser_name {
+
+ margin: 1rem;
+
+}
+
+.image_conatner {
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.image_conatner p {
+    font-size: 26px;
+    font-weight: bold;
+    
+
+}
+
+.first_row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+
+
+}
+
+.casuval {
+    position: relative;
+}
+
+.casual_text {
+    position: absolute;
+    top: 11%;
+    left: 9%;
+}
+
+.formal {
+    position: relative;
+}
+
+.formal_text {
+    position: absolute;
+    top: 11%;
+    left: 9%;
+}
+
+.party {
+    position: relative;
+}
+
+.party_text {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.gym {
+    position: relative;
+}
+
+.gym_text {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+
+
+.product_image {
     width: 100%;
-    overflow: hidden;
-}
-
-.image-row-2 {
-    position: relative;
-    bottom: 20px;
-}
-
-.image-wrapper {
-    position: relative;
-}
-
-.image-wrapper img {
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px;
 }
-
-.image-text-gym {
-    font-size: 32px;
-    font-weight: 700;
-    transform: translate(-50%, -50%);
-    position: relative;
-    bottom: 250px;
-    left: 90px;
+.product_card{
+    width: 260px;
+    height: 140px;
+ 
+  
 }
 
-.image-text {
-    font-size: 32px;
-    font-weight: 700;
-    transform: translate(-50%, -50%);
-    position: relative;
-    bottom: 250px;
-    left: 90px;
-}
-
-@media (max-width:1350px) {
-    .browse-dress-main-container{
-        width: 90%;
-    }
-}
-
-@media (max-width:768px) {
-
-    .image-row,
-    .image-row-2 {
-        flex-direction: column;
+@media (min-width:768px) {
+    .first_row {
+        display: flex;
+        flex-direction: row;
     }
 
-    .image-wrapper img {
-        width: 80%;
+    .row_reverse {
+        flex-direction: row-reverse;
+    }   
+    
+
+    .maincontainer_brows {
+        margin-left: 8rem;
+        margin-right: 8rem;
     }
 
-    .image-wrapper p {
+    .brows_header {
         font-size: 38px;
+        font-weight: 1000;
     }
-
-    .image-text {
-        bottom: 175px;
-        left: 160px;
+    .product_card{
+  width: 40%;
+  height: auto;
     }
-
-    .image-text-gym {
-        bottom: 320px;
-        left: 160px;
-    }
-
-    .image-gym {
-        position: relative;
-        bottom: 20px;
-    }
+ .formal{
+    flex: 0.9;
+ }
+.casuval{
+    flex: 0.5;
 }
-
-@media (max-width:480px) {
-    .image-wrapper p {
-        font-size: 20px;
-    }
-
-    .image-text {
-        bottom: 90px;
-        left: 80px;
-    }
-
-    .image-text-gym {
-        bottom: 160px;
-        left: 80px;
-    }
+.maincontainer_brows{
+    padding: 3rem 3rem 3rem 3rem;
 }
+.brows_header{
+   margin-bottom: 2rem;
+}
+}   

@@ -7,32 +7,35 @@ import '../browseProducts/browse-products.css';
 
 const BrowseProducts = () => {
     return (
-        <section className="browse-dress-main-container">
-            <div className="browse-dress-container">
-                <h1>BROWSE BY DRESS STYLE</h1>
-            </div>
-            <div className="main-browse-dress-images">
-                <div className="image-row">
-                    <div className="image-wrapper">
-                        <img src={Casual} alt="Casual" />
-                    </div>
-                    <div className="image-wrapper">
-                        <img src={Formal} alt="Formal" />
-                        <p className="image-text">Formal</p>
-                    </div>
+        <section>
+            <div className="maincontainer_brows">
+                <div className="browser_name">
+                    <h2 className="brows_header"> BROWSE BY DRESS STYLE</h2>
                 </div>
-                <div className="image-row-2">
-                    <div className="image-wrapper">
-                        <img src={Party} alt="Party" />
-                        <p className="image-text">Party</p>
+                <div className="image_conatner">
+                    <div className="first_row">
+                        <div className="casuval product_card">
+                            <img src={Casual} className="product_image" alt="casual" />
+                            <p className="casual_text">Casual</p>
+                        </div>
+                        <div className="formal product_card">
+                            <img src={Formal} className="product_image" alt="formal" />
+                            <p className="formal_text">Formal</p>
+                        </div>
                     </div>
-                    <div className="image-wrapper">
-                        <img className='image-gym' src={Gym} alt="Gym" />
-                        <p className="image-text-gym">Gym</p>
+                    <div className="first_row row_reverse">
+                        <div className="casuval product_card">
+                            <img src={Gym} className="product_image" alt="casual" />
+                            <p className="casual_text">Gym</p>
+                        </div>
+                        <div className="formal product_card">
+                            <img src={Party} className="product_image" alt="formal" />
+                            <p className="formal_text">Party</p>
+                        </div>
                     </div>
-                </div>
-            </div>
 
+                </div>
+            </div>
         </section>
     );
 };
